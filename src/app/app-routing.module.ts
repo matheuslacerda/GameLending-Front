@@ -26,6 +26,8 @@ const routes: Routes = [
     loadChildren: () =>
       import('@abp/ng.setting-management').then((m) => m.SettingManagementModule.forLazy()),
   },
+  { path: 'jogos', loadChildren: () => import('./jogo/jogo.module').then(m => m.JogoModule) },
+  { path: 'amigos', loadChildren: () => import('./amigo/amigo.module').then(m => m.AmigoModule) }
 ];
 
 @NgModule({
