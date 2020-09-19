@@ -11,6 +11,6 @@
   <a *ngIf="!hasLoggedIn" (click)="login()" class="px-4 btn btn-primary ml-1" role="button"
     ><i class="fa fa-sign-in"></i> {{ 'AbpAccount::Login' | abpLocalization }}</a
   >
-  <a *ngIf="hasLoggedIn" [routerLink]="['/jogos']" class="px-4 btn btn-primary ml-1" role="button">Jogos</a>
-  <a *ngIf="hasLoggedIn" [routerLink]="['/amigos']" class="px-4 btn btn-primary ml-1" role="button">Amigos</a>
+  <a *ngIf="hasLoggedIn" [routerLink]="['jogos']" class="px-4 btn btn-primary ml-1" role="button">Jogos</a>
+  <a *ngIf="hasLoggedIn" [routerLink]="['amigos']" class="px-4 btn btn-primary ml-1" role="button">Amigos</a>
 </div>
